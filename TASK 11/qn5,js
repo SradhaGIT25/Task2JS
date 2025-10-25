@@ -1,0 +1,19 @@
+const date=new Date;
+console.log(date);
+
+const targetDate=new Date("2025-10-27");
+
+let gap=(targetDate-date);
+console.log(gap);
+let milliseconds=gap;
+let seconds=gap/1000;
+let minutes=seconds/60;
+let hours=minutes/60;
+let days=hours/24;
+
+console.log(`Days:${days.toFixed(0)} , Hours:${hours.toFixed(0)} , Minutes:${minutes.toFixed(0)} , Seconds:${seconds.toFixed(0)} , Milliseconds:${milliseconds.toFixed(0)}`);
+
+if(days===0 && hours===0 && minutes===0 && seconds===0 && milliseconds===0){
+    console.log("Countdown Finished")
+}
+
